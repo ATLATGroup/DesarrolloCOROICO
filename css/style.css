@@ -1,17 +1,3 @@
-/*!
- * CoreUI - Open Source Bootstrap Admin Template
- * @version v1.0.10
- * @link http://coreui.io
- * Copyright (c) 2018 creativeLabs Łukasz Holeczek
- * @license MIT
- */
-
-/*!
- * Bootstrap v4.0.0 (https://getbootstrap.com)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 :root {
   --blue: #20a8d8;
   --indigo: #6610f2;
@@ -100,7 +86,7 @@ body {
   line-height: 1.5;
   color: #151b1e;
   text-align: left;
-  background-color: #e4e5e6; }
+  background-color: #fff; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -520,7 +506,8 @@ pre {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: -15px; }
+  margin-left: -15px;
+  }
 
 .no-gutters {
   margin-right: 0;
@@ -5911,7 +5898,10 @@ button.close {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #20a8d8 !important; }
+  background-color: #DCDCDC !important;
+  border-radius: 32px 32px 32px 32px;
+-moz-border-radius: 32px 32px 32px 32px;
+-webkit-border-radius: 32px 32px 32px 32px;}
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -5935,15 +5925,22 @@ button.bg-success:focus {
   background-color: #3a9d5d !important; }
 
 .bg-info {
-  background-color: #63c2de !important; }
+  background-color: #DCDCDC !important;
+  border-radius: 32px 32px 32px 32px;
+-moz-border-radius: 32px 32px 32px 32px;
+-webkit-border-radius: 32px 32px 32px 32px;}
 
 a.bg-info:hover, a.bg-info:focus,
 button.bg-info:hover,
 button.bg-info:focus {
-  background-color: #39b2d5 !important; }
+  background-color: #1985ac !important; }
 
 .bg-warning {
-  background-color: #ffc107 !important; }
+  background-color: #DCDCDC !important;
+  border-radius: 32px 32px 32px 32px;
+-moz-border-radius: 32px 32px 32px 32px;
+-webkit-border-radius: 32px 32px 32px 32px;
+  }
 
 a.bg-warning:hover, a.bg-warning:focus,
 button.bg-warning:hover,
@@ -5951,7 +5948,11 @@ button.bg-warning:focus {
   background-color: #d39e00 !important; }
 
 .bg-danger {
-  background-color: #f86c6b !important; }
+  background-color: #DCDCDC !important;
+  border-radius: 32px 32px 32px 32px;
+-moz-border-radius: 32px 32px 32px 32px;
+-webkit-border-radius: 32px 32px 32px 32px;
+    text-align: center;}
 
 a.bg-danger:hover, a.bg-danger:focus,
 button.bg-danger:hover,
@@ -9607,130 +9608,130 @@ button {
       background-color: #1e9ecb;
       border-color: #187da0; }
   .card.bg-secondary {
-    border-color: #7e99a7; }
+    border-color: #187da0; }
     .card.bg-secondary .card-header {
       background-color: #9bb0bb;
-      border-color: #7e99a7; }
+      border-color: #187da0; }
   .card.bg-success {
-    border-color: #379457; }
+    border-color: #187da0; }
     .card.bg-success .card-header {
       background-color: #44b76c;
-      border-color: #379457; }
+      border-color: #187da0; }
   .card.bg-info {
-    border-color: #2eadd3; }
+    border-color: #187da0; }
     .card.bg-info .card-header {
       background-color: #56bddb;
-      border-color: #2eadd3; }
+      border-color: #187da0; }
   .card.bg-warning {
-    border-color: #c69500; }
+    border-color: #187da0; }
     .card.bg-warning .card-header {
       background-color: #f7b900;
-      border-color: #c69500; }
+      border-color: #187da0; }
   .card.bg-danger {
-    border-color: #f5302e; }
+    border-color: #187da0; }
     .card.bg-danger .card-header {
       background-color: #f75d5c;
-      border-color: #f5302e; }
+      border-color: #187da0; }
   .card.bg-light {
-    border-color: #cad4dc; }
+    border-color: #187da0; }
     .card.bg-light .card-header {
       background-color: #e7ecef;
-      border-color: #cad4dc; }
+      border-color: #187da0; }
   .card.bg-dark {
-    border-color: #0f1417; }
+    border-color: #187da0; }
     .card.bg-dark .card-header {
       background-color: #232e34;
-      border-color: #0f1417; }
+      border-color: #187da0; }
   .card.bg-blue {
     border-color: #187da0; }
     .card.bg-blue .card-header {
       background-color: #1e9ecb;
       border-color: #187da0; }
   .card.bg-indigo {
-    border-color: #4c0ab8; }
+    border-color: #187da0; }
     .card.bg-indigo .card-header {
       background-color: #5f0de6;
-      border-color: #4c0ab8; }
+      border-color: #187da0; }
   .card.bg-purple {
-    border-color: #533093; }
+    border-color: #187da0; }
     .card.bg-purple .card-header {
       background-color: #683cb8;
-      border-color: #533093; }
+      border-color: #187da0; }
   .card.bg-pink {
-    border-color: #ce196c; }
+    border-color: #187da0; }
     .card.bg-pink .card-header {
       background-color: #e63084;
-      border-color: #ce196c; }
+      border-color: #187da0; }
   .card.bg-red {
-    border-color: #f5302e; }
+    border-color: #187da0; }
     .card.bg-red .card-header {
       background-color: #f75d5c;
-      border-color: #f5302e; }
+      border-color: #187da0; }
   .card.bg-orange {
-    border-color: #b89700; }
+    border-color: #187da0; }
     .card.bg-orange .card-header {
       background-color: #e9be00;
-      border-color: #b89700; }
+      border-color: #187da0; }
   .card.bg-yellow {
-    border-color: #c69500; }
+    border-color: #187da0; }
     .card.bg-yellow .card-header {
       background-color: #f7b900;
-      border-color: #c69500; }
+      border-color: #187da0; }
   .card.bg-green {
-    border-color: #379457; }
+    border-color: #187da0; }
     .card.bg-green .card-header {
       background-color: #44b76c;
-      border-color: #379457; }
+      border-color: #187da0; }
   .card.bg-teal {
-    border-color: #17926e; }
+    border-color: #187da0; }
     .card.bg-teal .card-header {
       background-color: #1ebc8d;
-      border-color: #17926e; }
+      border-color: #187da0; }
   .card.bg-cyan {
-    border-color: #2eadd3; }
+    border-color: #187da0; }
     .card.bg-cyan .card-header {
       background-color: #56bddb;
-      border-color: #2eadd3; }
+      border-color: #187da0; }
   .card.bg-gray-100 {
-    border-color: #cad4dc; }
+    border-color: #187da0; }
     .card.bg-gray-100 .card-header {
       background-color: #e7ecef;
-      border-color: #cad4dc; }
+      border-color: #187da0; }
   .card.bg-gray-200 {
-    border-color: #9cb1bc; }
+    border-color: #187da0; }
     .card.bg-gray-200 .card-header {
       background-color: #b9c8d0;
-      border-color: #9cb1bc; }
+      border-color: #187da0; }
   .card.bg-gray-300 {
-    border-color: #7e99a7; }
+    border-color: #187da0; }
     .card.bg-gray-300 .card-header {
       background-color: #9bb0bb;
-      border-color: #7e99a7; }
+      border-color: #187da0; }
   .card.bg-gray-400 {
-    border-color: #638090; }
+    border-color: #187da0; }
     .card.bg-gray-400 .card-header {
       background-color: #7d98a6;
-      border-color: #638090; }
+      border-color: #187da0; }
   .card.bg-gray-500 {
-    border-color: #4d6672; }
+    border-color: #187da0; }
     .card.bg-gray-500 .card-header {
       background-color: #61808f;
-      border-color: #4d6672; }
+      border-color: #187da0; }
   .card.bg-gray-600 {
-    border-color: #394a53; }
+    border-color: #187da0; }
     .card.bg-gray-600 .card-header {
       background-color: #4d6470;
-      border-color: #394a53; }
+      border-color: #187da0; }
   .card.bg-gray-700 {
-    border-color: #242f35; }
+    border-color: #187da0; }
     .card.bg-gray-700 .card-header {
       background-color: #384952;
-      border-color: #242f35; }
+      border-color: #187da0; }
   .card.bg-gray-800 {
-    border-color: #0f1417; }
+    border-color: #187da0; }
     .card.bg-gray-800 .card-header {
       background-color: #232e34;
-      border-color: #0f1417; }
+      border-color: #187da0; }
   .card.bg-gray-900 {
     border-color: black; }
     .card.bg-gray-900 .card-header {
@@ -9748,7 +9749,7 @@ button {
   margin-bottom: -0.75rem;
   margin-left: -1.25rem;
   line-height: inherit;
-  color: #151b1e;
+  color: #187da0;
   vertical-align: bottom;
   background: transparent;
   border-right: 1px solid #c2cfd6; }
@@ -12667,3 +12668,24 @@ hr.transparent {
       float: left; }
   *[dir="rtl"] .callout-default {
     border-right-color: #536c79; }
+
+.glyph {
+        /*display: inline-block;*/
+        /*width: 9px;*/
+        margin: 0px auto;
+        text-align: center;
+        vertical-align: top;
+    }
+
+.glyph .glyph-icon {
+        padding: 10px;
+        display: block;
+        font-family:"Flaticon";
+        font-size: 64px;
+        line-height: 1;
+    }
+      .glyph .glyph-icon:before {
+        font-size: 64px;
+        color: #222;
+        margin-left: 0;
+    }
