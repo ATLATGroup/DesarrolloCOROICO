@@ -1,7 +1,8 @@
 .tablaMoon{
     width: 90%;
-    border: 1px solid #000;
-    border-collapse: collapse;
+    border-radius: 30px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #666; 
 }
 
 .tablaMoon tr td{
@@ -10,11 +11,16 @@
 }
 
 .tablaMoon td{
-    border: 1px solid #000;
+    border: 1px solid #979797;
     padding: 20px;
 }
 
-.tablaMoon tr:hover{
+.tablaMoon th{
+    border: 1px solid #979797;
+    padding: 20px;
+}
+
+.tablaMoon tbody tr:hover{
     background: #ccc;
 }
 
