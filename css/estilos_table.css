@@ -1,7 +1,8 @@
 .tablaMoon{
     width: 90%;
-    border: 1px solid #000;
-    border-collapse: collapse;
+    border-radius: 30px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #666; 
 }
 
 .tablaMoon tr td{
@@ -10,17 +11,27 @@
 }
 
 .tablaMoon td{
-    border: 1px solid #000;
+    border: 1px solid #979797;
     padding: 20px;
 }
 
-.tablaMoon tr:hover{
+.tablaMoon th{
+    border: 1px solid #979797;
+    padding: 20px;
+}
+
+.tablaMoon tbody tr:hover{
     background: #ccc;
 }
 
 .tablaMoon tr td span{
     margin-right: 15px;
     font-size: 20px;
+}
+
+.tablaMoon tr td a{
+    text-decoration: none;
+    color: #000;
 }
 
 .cerrarVentanaModal{
@@ -30,9 +41,18 @@
     text-align: center;
 }
 
+.ventanaModal, .ventanaModal01, .ventanaModal02, .ventanaModal03, .ventanaModal04, .ventanaModal05{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: -30px;
+    display: none;
+}
 
-
-.ventanaModal{
+.ventanaModal0, .ventanaModal001, .ventanaModal002, .ventanaModal003, .ventanaModal004, .ventanaModal005{
     width: 100%;
     height: 100%;
     color: #fff;
@@ -50,11 +70,37 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 0px solid #000000;
+    border-radius: 15px 15px 15px 15px;
+-moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
 }
 
-.informacion:focus{
+.informacion1:focus{
     border: 1px solid #1668c4;
+    border-radius: 15px 15px 15px 15px;
+-moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
+}
+
+.informacion1 {
+    /*Margen hacia abajo*/margin-bottom: 20px;
+    width: 100%;
+    /*Espaciado interno*/padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0px solid #000000;
+    border-radius: 15px 15px 15px 15px;
+-moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
+}
+
+.informacion1:focus{
+    border: 1px solid #1668c4;
+    border-radius: 15px 15px 15px 15px;
+-moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
 }
 
 textarea{
@@ -132,4 +178,13 @@ border: 2px solid #1f1d1f;
   color: #FFFFFF;
   border-color: #FBFFAD;
     cursor: pointer;
+}
+
+.modalHeader{
+    width: 90%;
+}
+
+.areasText tr td{
+    margin: 0px;
+    padding: 25px;
 }

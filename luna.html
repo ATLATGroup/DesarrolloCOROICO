@@ -12,14 +12,7 @@
     <link href="css/estilos_table.css" rel="stylesheet" type="text/css">
     <link href="css/Coroico/fonts/style.css" rel="stylesheet" type="text/css">
     <script src="css/Coroico/fonts/jquery.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        function openventana(){
-            $(".ventanaModal").slideDown("slow");
-        }
-        function closeventana(){
-            $(".ventanaModal").slideUp("fast");
-        }
-    </script>
+    <script src="js/modales.js" type="text/javascript"></script>
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
@@ -56,24 +49,302 @@
     </button>
   </header>  
     
+   <!--modal start-->
    <div class="ventanaModal">
             <div class="form">
-                <table>
+                <table class="modalHeader">
                     <tr>
-                        <td><div class="cerrarVentanaModal">Código de ética</div></td>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal">Código de ética</div></td>
+                        <td></td>
+                        <td><div class="cerrar"><a href="javascript:closeventana();"><span class="icon-cross"></span></a></div></td>
                     </tr>
                 </table>
-                <div class="cerrar"><a href="javascript:closeventana();"><span class="icon-cross"></span></a></div>
+                <hr>
                 <form>
-                    <table>
+                    <table class="areasText">
                         <tr>
-                            <td><textarea placeholder="....." class="informacion"></textarea></td>
+                            <td><textarea placeholder="Escribe tu código de ética." class="informacion" id="informacion" spellcheck="true"></textarea></td>
+                            <td><textarea id="informacion1"class="informacion1" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false">Dentro de esta sección debes redactar tu código de ética tal como el siguiente ejemplo: 
+                                                   El LABORATORIO se compromete a realizar todas las disposiciones legales asegurando.</textarea></td>
                         </tr>
                     </table>
                     <div class="botonInfo"><input type="submit" value="Guardar" class="btn"></div>
                 </form>
             </div>
         </div>
+    
+    <div class="ventanaModal01">
+            <div class="form">
+                <table class="modalHeader">
+                    <tr>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal">Conducta de ética confianza</div></td>
+                        <td></td>
+                        <td><div class="cerrar"><a href="javascript:closeventana01();"><span class="icon-cross"></span></a></div></td>
+                    </tr>
+                </table>
+                <hr>
+                <form>
+                    <table class="areasText">
+                        <tr>
+                            <td><textarea placeholder="Escribe tu conducta de ética confianza." class="informacion" id="informacion" spellcheck="true"></textarea></td>
+                            <td><textarea id="informacion1"class="informacion1" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false">Dentro de esta sección debes redactar tu código de ética tal como el siguiente ejemplo: 
+                                                   El LABORATORIO se compromete a realizar todas las disposiciones legales asegurando.</textarea></td>
+                        </tr>
+                    </table>
+                    <div class="botonInfo"><input type="submit" value="Guardar" class="btn"></div>
+                </form>
+            </div>
+        </div>
+    
+    <div class="ventanaModal02">
+            <div class="form">
+                <table class="modalHeader">
+                    <tr>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal">Conducta de ética calidad</div></td>
+                        <td></td>
+                        <td><div class="cerrar"><a href="javascript:closeventana02();"><span class="icon-cross"></span></a></div></td>
+                    </tr>
+                </table>
+                <hr>
+                <form>
+                    <table class="areasText">
+                        <tr>
+                            <td><textarea placeholder="Escribe tu conducta de ética calidad." class="informacion" id="informacion" spellcheck="true"></textarea></td>
+                            <td><textarea id="informacion1"class="informacion1" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false">Dentro de esta sección debes redactar tu código de ética tal como el siguiente ejemplo: 
+                                                   El LABORATORIO se compromete a realizar todas las disposiciones legales asegurando.</textarea></td>
+                        </tr>
+                    </table>
+                    <div class="botonInfo"><input type="submit" value="Guardar" class="btn"></div>
+                </form>
+            </div>
+        </div>
+    
+    <div class="ventanaModal03">
+            <div class="form">
+                <table class="modalHeader">
+                    <tr>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal">Conducta de ética resoluciòn de conflictos</div></td>
+                        <td></td>
+                        <td><div class="cerrar"><a href="javascript:closeventana03();"><span class="icon-cross"></span></a></div></td>
+                    </tr>
+                </table>
+                <hr>
+                <form>
+                    <table class="areasText">
+                        <tr>
+                            <td><textarea placeholder="Escribe tu conducta de ética resoluciòn de conflictos." class="informacion" id="informacion" spellcheck="true"></textarea></td>
+                            <td><textarea id="informacion1"class="informacion1" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false">Dentro de esta sección debes redactar tu código de ética tal como el siguiente ejemplo: 
+                                                   El LABORATORIO se compromete a realizar todas las disposiciones legales asegurando.</textarea></td>
+                        </tr>
+                    </table>
+                    <div class="botonInfo"><input type="submit" value="Guardar" class="btn"></div>
+                </form>
+            </div>
+        </div>
+    
+    <div class="ventanaModal04">
+            <div class="form">
+                <table class="modalHeader">
+                    <tr>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal">Conducta de ética manejo de muestras</div></td>
+                        <td></td>
+                        <td><div class="cerrar"><a href="javascript:closeventana04();"><span class="icon-cross"></span></a></div></td>
+                    </tr>
+                </table>
+                <hr>
+                <form>
+                    <table class="areasText">
+                        <tr>
+                            <td><textarea placeholder="Escribe tu conducta de ética manejo de muestras." class="informacion" id="informacion" spellcheck="true"></textarea></td>
+                            <td><textarea id="informacion1"class="informacion1" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false">Dentro de esta sección debes redactar tu código de ética tal como el siguiente ejemplo: 
+                                                   El LABORATORIO se compromete a realizar todas las disposiciones legales asegurando.</textarea></td>
+                        </tr>
+                    </table>
+                    <div class="botonInfo"><input type="submit" value="Guardar" class="btn"></div>
+                </form>
+            </div>
+        </div>
+    
+    <div class="ventanaModal05">
+            <div class="form">
+                <table class="modalHeader">
+                    <tr>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal">Conducta de ética confidencialidad</div></td>
+                        <td></td>
+                        <td><div class="cerrar"><a href="javascript:closeventana05();"><span class="icon-cross"></span></a></div></td>
+                    </tr>
+                </table>
+                <hr>
+                <form>
+                    <table class="areasText">
+                        <tr>
+                            <td><textarea placeholder="Escribe tu conducta de ética manejo de muestras." class="informacion" id="informacion" spellcheck="true"></textarea></td>
+                            <td><textarea id="informacion1"class="informacion1" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false">Dentro de esta sección debes redactar tu código de ética tal como el siguiente ejemplo: 
+                                                   El LABORATORIO se compromete a realizar todas las disposiciones legales asegurando.</textarea></td>
+                        </tr>
+                    </table>
+                    <div class="botonInfo"><input type="submit" value="Guardar" class="btn"></div>
+                </form>
+            </div>
+        </div>
+    
+    <!--//////////////////////////////////////////////EYE////////////////////////-->
+    <div class="ventanaModal0">
+            <div class="form">
+                <table class="modalHeader">
+                    <tr>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal">Código de ética</div></td>
+                        <td></td>
+                        <td><div class="cerrar"><a href="javascript:eyecloseventana();"><span class="icon-cross"></span></a></div></td>
+                    </tr>
+                </table>
+                <hr>
+                <form>
+                    <table class="areasText">
+                        <tr>
+                            <td><textarea id="informacion1"class="informacion1" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false">Escribe tu código de ética.</textarea></td>
+                            <td><textarea id="informacion1"class="informacion1" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false">Dentro de esta sección debes redactar tu código de ética tal como el siguiente ejemplo: 
+                                                   El LABORATORIO se compromete a realizar todas las disposiciones legales asegurando.</textarea></td>
+                        </tr>
+                    </table>
+                    <div class="botonInfo"><input type="submit" value="Guardar" class="btn"></div>
+                </form>
+            </div>
+        </div>
+    
+    <div class="ventanaModal001">
+            <div class="form">
+                <table class="modalHeader">
+                    <tr>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal">Conducta de ética confianza</div></td>
+                        <td></td>
+                        <td><div class="cerrar"><a href="javascript:eyecloseventana01();"><span class="icon-cross"></span></a></div></td>
+                    </tr>
+                </table>
+                <hr>
+                <form>
+                    <table class="areasText">
+                        <tr>
+                            <td><textarea placeholder="Escribe tu conducta de ética confianza." class="informacion" id="informacion" spellcheck="true" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false"></textarea></td>
+                            <td><textarea id="informacion1"class="informacion1" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false">Dentro de esta sección debes redactar tu código de ética tal como el siguiente ejemplo: 
+                                                   El LABORATORIO se compromete a realizar todas las disposiciones legales asegurando.</textarea></td>
+                        </tr>
+                    </table>
+                    <div class="botonInfo"><input type="submit" value="Guardar" class="btn"></div>
+                </form>
+            </div>
+        </div>
+    
+    <div class="ventanaModal002">
+            <div class="form">
+                <table class="modalHeader">
+                    <tr>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal">Conducta de ética calidad</div></td>
+                        <td></td>
+                        <td><div class="cerrar"><a href="javascript:eyecloseventana02();"><span class="icon-cross"></span></a></div></td>
+                    </tr>
+                </table>
+                <hr>
+                <form>
+                    <table class="areasText">
+                        <tr>
+                            <td><textarea placeholder="Escribe tu conducta de ética calidad." class="informacion" id="informacion" spellcheck="true" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false"></textarea></td>
+                            <td><textarea id="informacion1"class="informacion1" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false">Dentro de esta sección debes redactar tu código de ética tal como el siguiente ejemplo: 
+                                                   El LABORATORIO se compromete a realizar todas las disposiciones legales asegurando.</textarea></td>
+                        </tr>
+                    </table>
+                    <div class="botonInfo"><input type="submit" value="Guardar" class="btn"></div>
+                </form>
+            </div>
+        </div>
+    
+    <div class="ventanaModal003">
+            <div class="form">
+                <table class="modalHeader">
+                    <tr>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal">Conducta de ética resoluciòn de conflictos</div></td>
+                        <td></td>
+                        <td><div class="cerrar"><a href="javascript:eyecloseventana03();"><span class="icon-cross"></span></a></div></td>
+                    </tr>
+                </table>
+                <hr>
+                <form>
+                    <table class="areasText">
+                        <tr>
+                            <td><textarea placeholder="Escribe tu conducta de ética resoluciòn de conflictos." class="informacion" id="informacion" spellcheck="true" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false"></textarea></td>
+                            <td><textarea id="informacion1"class="informacion1" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false">Dentro de esta sección debes redactar tu código de ética tal como el siguiente ejemplo: 
+                                                   El LABORATORIO se compromete a realizar todas las disposiciones legales asegurando.</textarea></td>
+                        </tr>
+                    </table>
+                    <div class="botonInfo"><input type="submit" value="Guardar" class="btn"></div>
+                </form>
+            </div>
+        </div>
+    
+    <div class="ventanaModal004">
+            <div class="form">
+                <table class="modalHeader">
+                    <tr>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal">Conducta de ética manejo de muestras</div></td>
+                        <td></td>
+                        <td><div class="cerrar"><a href="javascript:eyecloseventana04();"><span class="icon-cross"></span></a></div></td>
+                    </tr>
+                </table>
+                <hr>
+                <form>
+                    <table class="areasText">
+                        <tr>
+                            <td><textarea placeholder="Escribe tu conducta de ética manejo de muestras." class="informacion" id="informacion" spellcheck="true" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false"></textarea></td>
+                            <td><textarea id="informacion1"class="informacion1" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false">Dentro de esta sección debes redactar tu código de ética tal como el siguiente ejemplo: 
+                                                   El LABORATORIO se compromete a realizar todas las disposiciones legales asegurando.</textarea></td>
+                        </tr>
+                    </table>
+                    <div class="botonInfo"><input type="submit" value="Guardar" class="btn"></div>
+                </form>
+            </div>
+        </div>
+    
+    <div class="ventanaModal005">
+            <div class="form">
+                <table class="modalHeader">
+                    <tr>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal">Conducta de ética confidencialidad</div></td>
+                        <td></td>
+                        <td><div class="cerrar"><a href="javascript:eyecloseventana05();"><span class="icon-cross"></span></a></div></td>
+                    </tr>
+                </table>
+                <hr>
+                <form>
+                    <table class="areasText">
+                        <tr>
+                            <td><textarea placeholder="Escribe tu conducta de ética manejo de muestras." class="informacion" id="informacion" spellcheck="true" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false"></textarea></td>
+                            <td><textarea id="informacion1"class="informacion1" disabled="false" oncontextmenu='return false' ondragstart='return false'
+onmousedown='return false' onselectstart='return false' onpaste="return false" oncut="return false" oncopy="return false">Dentro de esta sección debes redactar tu código de ética tal como el siguiente ejemplo: 
+                                                   El LABORATORIO se compromete a realizar todas las disposiciones legales asegurando.</textarea></td>
+                        </tr>
+                    </table>
+                    <div class="botonInfo"><input type="submit" value="Guardar" class="btn"></div>
+                </form>
+            </div>
+        </div>
+    <!-- modal end-->
     
   <div class="app-body">
       
@@ -106,33 +377,35 @@
         
       <div class="container-fluid">
               <table class="tablaMoon">
-                  <tr>
-                      <td>Cráter</td>
-                      <td>Acciones</td>
-                  </tr>
+                  <thead>
+                      <tr>
+                          <th>Cráter</th>
+                          <th>Acciones</th>
+                      </tr>
+                  </thead>
                   <tr>
                       <td>Código de ética</td>
-                      <td><a href="javascript:openventana();"><span class="icon-pencil"></span></a><span class="icon-eye"></span></td>
+                      <td><a href="javascript:openventana();"><span class="icon-pencil"></span></a><a href="javascript:eyeopenventana();"><span class="icon-eye"></span></td>
                   </tr>
                   <tr>
                       <td>Conducta de ética confianza</td>
-                      <td><span class="icon-pencil"></span><span class="icon-eye"></span></td>
+                      <td><a href="javascript:openventana01();"><span class="icon-pencil"></span></a><a href="javascript:eyeopenventana01();"><span class="icon-eye"></span></a></td>
                   </tr>
                   <tr>
                       <td>Conducta de ética de calidad</td>
-                      <td><span class="icon-pencil"></span><span class="icon-eye"></span></td>
+                      <td><a href="javascript:openventana02();"><span class="icon-pencil"></span></a><a href="javascript:eyeopenventana02();"><span class="icon-eye"></span></a></td>
                   </tr>
                   <tr>
                       <td>Conducta de ética resoluciòn de conflictos</td>
-                      <td><span class="icon-pencil"></span><span class="icon-eye"></span></td>
+                      <td><a href="javascript:openventana03();"><span class="icon-pencil"></span></a><a href="javascript:eyeopenventana03();"><span class="icon-eye"></span></a></td>
                   </tr>
                   <tr>
                       <td>Conducta de ética manejo de muestras</td>
-                      <td><span class="icon-pencil"></span><span class="icon-eye"></span></td>
+                      <td><a href="javascript:openventana04();"><span class="icon-pencil"></span></a><a href="javascript:eyeopenventana04();"><span class="icon-eye"></span></a></td>
                   </tr>
                   <tr>
                       <td>Conducta de ética cofidencialidad</td>
-                      <td><span class="icon-pencil"></span><span class="icon-eye"></span></td>
+                      <td><a href="javascript:openventana05();"><span class="icon-pencil"></span></a><a href="javascript:eyeopenventana05();"><span class="icon-eye"></span></a></td>
                   </tr>
               </table>
           </div>
