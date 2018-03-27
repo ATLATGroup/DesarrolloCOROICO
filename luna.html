@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>- Coroico -</title>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-icons.min.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css">
+  <link href="css/style.css" rel="stylesheet">
+    <link href="css/estilos_table.css" rel="stylesheet" type="text/css">
+    <link href="css/Coroico/fonts/style.css" rel="stylesheet" type="text/css">
+    <script src="css/Coroico/fonts/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function openventana(){
+            $(".ventanaModal").slideDown("slow");
+        }
+        function closeventana(){
+            $(".ventanaModal").slideUp("fast");
+        }
+    </script>
+</head>
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+    
+    <header class="app-header navbar">
+    <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"></a>
+      
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item d-md-down-none">
+        <a class="nav-link" href="#"><i class="icon-list"></i></a>
+      </li>
+      <li class="nav-item d-md-down-none">
+        <a class="nav-link" href="#"><i class="icon-location-pin"></i></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <div class="dropdown-header text-center">
+            <strong>Account</strong>
+          </div>
+          <div class="dropdown-header text-center">
+            <strong>Settings</strong>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <button class="navbar-toggler aside-menu-toggler" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </header>  
+    
+   <div class="ventanaModal">
+            <div class="form">
+                <div class="cerrar"><a href="javascript:closeventana();"><span class="icon-cross"></span></a></div>
+                <hr>
+                <div class="cerrarVentanaModal">Código de ética</div>
+                <form>
+                    <table>
+                        <tr>
+                            <td><textarea placeholder="....." class="informacion"></textarea></td>
+                        </tr>
+                    </table>
+                    <div class="botonInfo"><input type="submit" value="Guardar" class="btn"></div>
+                </form>
+            </div>
+        </div>
+    
+  <div class="app-body">
+      
+     <div class="sidebar">
+      <nav class="sidebar-nav">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="flaticon-saturn"></span> 4.1.1.1 Generalidades</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span class="flaticon-saturn"></span> 4.1.1.2 Entidad legal</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+    </div>
+      
+    <!-- Main content-->
+    <main class="main">
+        
+      <!-- Breadcrumb--> 
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">COROICO</li>
+        <li class="breadcrumb-item"><a href="#">Universo</a></li>
+        <li class="breadcrumb-item"><a href="#">Galaxia</a></li>
+        <li class="breadcrumb-item "><a href="#">Sistema Solar</a></li>
+        <li class="breadcrumb-item"><a href="#">Planeta</a></li>
+        <li class="breadcrumb-item  active">Luna</li>
+      </ol>
+        
+      <div class="container-fluid">
+              <table class="tablaMoon">
+                  <tr>
+                      <td>Cráter</td>
+                      <td>Acciones</td>
+                  </tr>
+                  <tr>
+                      <td>Código de ética</td>
+                      <td><a href="javascript:openventana();"><span class="icon-pencil"></span></a><span class="icon-eye"></span></td>
+                  </tr>
+                  <tr>
+                      <td>Conducta de ética confianza</td>
+                      <td><span class="icon-pencil"></span><span class="icon-eye"></span></td>
+                  </tr>
+                  <tr>
+                      <td>Conducta de ética de calidad</td>
+                      <td><span class="icon-pencil"></span><span class="icon-eye"></span></td>
+                  </tr>
+                  <tr>
+                      <td>Conducta de ética resoluciòn de conflictos</td>
+                      <td><span class="icon-pencil"></span><span class="icon-eye"></span></td>
+                  </tr>
+                  <tr>
+                      <td>Conducta de ética manejo de muestras</td>
+                      <td><span class="icon-pencil"></span><span class="icon-eye"></span></td>
+                  </tr>
+                  <tr>
+                      <td>Conducta de ética cofidencialidad</td>
+                      <td><span class="icon-pencil"></span><span class="icon-eye"></span></td>
+                  </tr>
+              </table>
+          </div>
+        
+        
+        
+        
+        </div>
+
+      </div>
+      <!-- /.conainer-fluid--> 
+    </main>
+
+    <aside class="aside-menu">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#timeline" role="tab"><i class="icon-list"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#messages" role="tab"><i class="icon-speech"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#settings" role="tab"><i class="icon-settings"></i></a>
+        </li>
+      </ul>
+        
+          <hr>
+        </div>
+      </div>
+  </div>
+  <footer class="app-footer">
+    <span><a href="#">COROICO</a> © 2018 Atlatl Group.</span>
+    <span class="ml-auto">Powered by <a href="#">Atlatl Group</a></span>
+  </footer>
+
+  <!-- Bootstrap and necessary plugins 
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/pace-progress/pace.min.js"></script> -->
+
+  <!-- Plugins and scripts required by all views 
+  <script src="node_modules/chart.js/dist/Chart.min.js"></script> -->
+
+  <!-- CoreUI main scripts 
+
+  <script src="js/app.js"></script>-->
+
+  <!-- Plugins and scripts required by this views -->
+
+  <!-- Custom scripts required by this view 
+  <script src="js/views/main.js"></script>-->
+    <script src="main1.js"></script>
+
+</body>
+</html>
