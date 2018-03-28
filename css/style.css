@@ -12400,8 +12400,8 @@ app-root {
       display: none; }
   .main, .app-footer {
     margin-left: 0 !important; }
-  ./*sidebar-hidden .sidebar {
-    margin-left: -220px; }*/
+  .sidebar-hidden .sidebar {
+    margin-left: -220px; }
   .sidebar-mobile-show .sidebar {
     width: 220px;
     margin-left: 220px; }
@@ -12704,4 +12704,9 @@ border: 0px solid #187da0;
 
 .cajas:hover{
     background: #FFFFFF;
+}
+
+.puntocuatro{
+    font-size: 19px;
+    text-align: center;
 }
