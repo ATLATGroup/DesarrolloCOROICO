@@ -16,28 +16,28 @@
             var s = document.getElementById("sideBarId");
             var style = s.currentStyle || window.getComputedStyle(s);
             var margin = style.marginLeft;
-            
+            var w = window.innerWidth;
+
+            if(w >= "992")
+                document.getElementById("sideBarId").style.marginLeft="0px";
+            else if(w <= "992")
+                document.getElementById("sideBarId").style.marginLeft="-220px";
         
-            //alert(margin);
-            if(margin === "-220px")
-            document.getElementById("sideBarId").style.marginLeft="0px";
-     
-                
         });
     });
+        
         
         //boton
     function sideBarMan(){
         var s = document.getElementById("sideBarId");
         var style = s.currentStyle || window.getComputedStyle(s);
         var margin = style.marginLeft;
-        //var margin2 = style.marginRight;
-        
             
         if (margin === "-220px")
-             document.getElementById("sideBarId").style.marginLeft="0px";
+            document.getElementById("sideBarId").style.marginLeft="0px";
         else
              document.getElementById("sideBarId").style.marginLeft="-220px";
+        
     }
         
     </script>
