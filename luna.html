@@ -13,13 +13,14 @@
     <link href="css/Coroico/fonts/style.css" rel="stylesheet" type="text/css">
     <script src="css/Coroico/fonts/jquery.js" type="text/javascript"></script>
     <script src="js/modales.js" type="text/javascript"></script>
+    <script src="js/menu.js" type="text/javascript"></script>
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
     
     <header class="app-header navbar">
     <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"  onclick="sideBarMan()"></span>
     </button>
     <a class="navbar-brand" href="#"></a>
       
@@ -126,7 +127,7 @@ onmousedown='return false' onselectstart='return false' onpaste="return false" o
             <div class="form">
                 <table class="modalHeader">
                     <tr>
-                        <td><div style="padding: 10px" class="cerrarVentanaModal">Conducta de ética resoluciòn de conflictos</div></td>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal"><label class="conflicto">Conducta de ética resoluciòn de conflictos</label></div></td>
                         <td></td>
                         <td><div class="cerrar"><a href="javascript:closeventana03();"><span class="icon-cross"></span></a></div></td>
                     </tr>
@@ -150,7 +151,7 @@ onmousedown='return false' onselectstart='return false' onpaste="return false" o
             <div class="form">
                 <table class="modalHeader">
                     <tr>
-                        <td><div style="padding: 10px" class="cerrarVentanaModal">Conducta de ética manejo de muestras</div></td>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal"><label class="muestras">Conducta de ética manejo de muestras</label></div></td>
                         <td></td>
                         <td><div class="cerrar"><a href="javascript:closeventana04();"><span class="icon-cross"></span></a></div></td>
                     </tr>
@@ -274,7 +275,7 @@ onmousedown='return false' onselectstart='return false' onpaste="return false" o
             <div class="form">
                 <table class="modalHeader">
                     <tr>
-                        <td><div style="padding: 10px" class="cerrarVentanaModal">Conducta de ética resoluciòn de conflictos</div></td>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal"><label class="conflicto">Conducta de ética resoluciòn de conflictos</label></div></td>
                         <td></td>
                         <td><div class="cerrar"><a href="javascript:eyecloseventana03();"><span class="icon-cross"></span></a></div></td>
                     </tr>
@@ -299,7 +300,7 @@ onmousedown='return false' onselectstart='return false' onpaste="return false" o
             <div class="form">
                 <table class="modalHeader">
                     <tr>
-                        <td><div style="padding: 10px" class="cerrarVentanaModal">Conducta de ética manejo de muestras</div></td>
+                        <td><div style="padding: 10px" class="cerrarVentanaModal"><label class="muestras">Conducta de ética manejo de muestras</label></div></td>
                         <td></td>
                         <td><div class="cerrar"><a href="javascript:eyecloseventana04();"><span class="icon-cross"></span></a></div></td>
                     </tr>
@@ -348,7 +349,7 @@ onmousedown='return false' onselectstart='return false' onpaste="return false" o
     
   <div class="app-body">
       
-     <div class="sidebar">
+     <div id="sideBarId" class="sidebar">
       <nav class="sidebar-nav">
         <ul class="nav">
           <li class="nav-item">

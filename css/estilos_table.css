@@ -24,6 +24,14 @@
     background: #ccc;
 }
 
+.tablaMoon tr td  span:hover{
+    color: #87CEFA;
+} 
+
+.modalHeader tr td div.cerrar a span:hover{
+    color:#FF0000;
+}
+
 .tablaMoon tr td span{
     margin-right: 15px;
     font-size: 20px;
@@ -187,4 +195,8 @@ border: 2px solid #1f1d1f;
 .areasText tr td{
     margin: 0px;
     padding: 25px;
+}
+
+.conflicto, .muestras{
+    font-size: 20px;
 }

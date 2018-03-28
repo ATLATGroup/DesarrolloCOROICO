@@ -12682,31 +12682,41 @@ hr.transparent {
         padding: 10px;
         display: block;
         font-family:"Flaticon";
-        font-size: 64px;
+        font-size: 120px;
         line-height: 1;
+        color: #000;
     }
       .glyph .glyph-icon:before {
-        font-size: 64px;
-        color: #222;
+        font-size: 120px;
         margin-left: 0;
     }
 
+.cajas:hover .glyph .glyph-icon, .puntocuatro:hover{
+    color: #ccc;
+    cursor: pointer;
+}
+
 .cajas{
-    background: #ccc;
-    width: 250px;
-    height: 250px;
-    margin: 10px;
+    background: #fff;
+    width: 206px;
+    height: 206px;
+    margin: 20px;
     border-radius: 32px 32px 32px 32px;
 -moz-border-radius: 32px 32px 32px 32px;
 -webkit-border-radius: 32px 32px 32px 32px;
 border: 0px solid #187da0;
 }
 
-.cajas:hover{
-    background: #FFFFFF;
-}
+/*.cajas:hover .puntocuatro {
+    color: #ccc;
+}*/
 
 .puntocuatro{
-    font-size: 19px;
+    font-size: 16px;
     text-align: center;
+}
+
+
+#galaxia{
+    font-size: 20px;
 }
