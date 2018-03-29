@@ -1,0 +1,11 @@
+runtime: php55
+api_version: 1
+
+handlers:
+- url: .*
+  script: web/index.php
+
+env_variables:
+ MYSQL_DSN: mysql:unix_socket=/cloudsql/atlalt02:us-east1:library;dbname=datos
+ MYSQL_USER: root
+ MYSQL_PASSWORD: 'prueba6661'
