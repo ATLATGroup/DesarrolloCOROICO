@@ -1,11 +1,25 @@
+application: atlalt02
+
 runtime: php55
 api_version: 1
 
 handlers:
 - url: .*
-  script: web/index.php
-
+  script: index.php
+  
+- url: /css
+  static_dir: css
+  
+- url: /public_html/css
+  static_dir: css
+  
+-url: /public_html/js
+  static_dir: js
+  
+-url: /public_html
+  script: html
+  
 env_variables:
- MYSQL_DSN: mysql:unix_socket=/cloudsql/atlalt02:us-east1:library;dbname=datos
+ MYSQL_DSN: mysql:unix_socket=/cloudsql/atlalt02:us-east1:library;dbname=
  MYSQL_USER: root
  MYSQL_PASSWORD: 'prueba6661'
