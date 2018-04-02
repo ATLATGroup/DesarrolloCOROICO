@@ -1,5 +1,5 @@
 application: atlalt02
-
+version: 1
 runtime: php55
 api_version: 1
 
@@ -11,15 +11,37 @@ handlers:
   static_dir: css
   
 - url: /public_html/css
-  static_dir: css
+  static_dir: /public_html/css
   
--url: /public_html/js
-  static_dir: js
+- url: /public_html/js
+  static_dir: /public_html/js
   
--url: /public_html
+- url: /images
+  static_dir: images
+  
+- url: /public_html/img
+  static_dir: /public_html/img
+  
+- url: /public_html/img/avatars
+  static_dir: /public_html/img/avatars
+  
+- url: /public_html
   script: html
   
+#- url: /login.php
+ # script: login.php
+  
+- url: /(.+\.php)$
+  script: \1
+  
+- url: /([^/]+\.php)$
+  script: \1
+  
+- url: /(.*\.(gif|png|jpg))$
+  static_files: static/\1
+  upload: static/.*\.(gif|png|jpg)$
+  
 env_variables:
- MYSQL_DSN: mysql:unix_socket=/cloudsql/atlalt02:us-east1:library;dbname=
+ MYSQL_DSN: mysql:unix_socket=/cloudsql/atlalt02:us-east1:library;dbname=atlatl
  MYSQL_USER: root
  MYSQL_PASSWORD: 'prueba6661'

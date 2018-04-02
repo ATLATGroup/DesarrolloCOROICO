@@ -1,4 +1,4 @@
-<?php include('server.php') ?>
+<?php require_once('server.php') ?>
 <!DOCTYPE html>
 <html>
 
@@ -93,7 +93,7 @@
         
        <form class="login" action="login.php" method="POST">
          <?php include('errors.php'); ?>  
-        <h1 class="login-title"> <img src="Logo3.png" style="max-width:80%;width:auto;height:auto;" >
+        <h1 class="login-title"> <img src="images/Logo3.png" style="max-width:80%;width:auto;height:auto;" >
  </h1>
         <?php if(!empty($message)): ?>
         <p> <?= $message ?></p>

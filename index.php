@@ -1,16 +1,18 @@
 <?php 
   session_start(); 
-
   if (!isset($_SESSION['username'])) {
   	$_SESSION['msg'] = "You must log in first";
-  	header('location: login.php');
+      //header("Location: login.php");
+      require_once('login.php');
   }
   if (isset($_GET['logout'])) {
   	session_destroy();
   	unset($_SESSION['username']);
-  	header("location: login.php");
+  	require_once('login.php');
+    //header("Location: login.php");  
   }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +32,6 @@
 <body>
 
 <div class="header">
-	<h2>Home Page</h2>
 </div>
 <div class="content">
   	<!-- notification message -->
@@ -47,7 +48,8 @@
 
     <!-- logged in user information -->
     <?php  if (isset($_SESSION['username'])) : 
-    	header("Location:public_html/principal.html")  ?>
+    	//require_once('public_html/principal.html') 
+        header("Location: public_html/principal.html")?>
     <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
     <?php endif ?>
 </div>
