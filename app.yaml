@@ -1,5 +1,5 @@
 application: atlalt02
-version: 1
+version: 2
 runtime: php55
 api_version: 1
 
@@ -9,27 +9,40 @@ handlers:
   
 - url: /css
   static_dir: css
-  
-- url: /public_html/css
-  static_dir: /public_html/css
-  
-- url: /public_html/js
-  static_dir: /public_html/js
+  application_readable: true
+  require_matching_file: true
   
 - url: /images
   static_dir: images
+  application_readable: true
+  require_matching_file: true
+  
+- url: /public_html
+  script: html
+
+- url: /public_html/css
+  static_dir: /public_html/css
+  
+- url: /public_html/css/Coroico
+  static_dir: /public_html/css/Coroico
+  
+- url: /public_html/css/Coroico/fonts
+  static_dir: /public_html/css/Coroico
+  
+- url: /public_html/font
+  static_dir: /public_html/font
+  
+- url: /public_html/img
+  static_dir: /public_html/imgs
+  
+- url: /public_html/js
+  static_dir: /public_html/js
   
 - url: /public_html/img
   static_dir: /public_html/img
   
 - url: /public_html/img/avatars
   static_dir: /public_html/img/avatars
-  
-- url: /public_html
-  script: html
-  
-#- url: /login.php
- # script: login.php
   
 - url: /(.+\.php)$
   script: \1

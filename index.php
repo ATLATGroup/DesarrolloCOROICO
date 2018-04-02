@@ -45,11 +45,10 @@
       	</h3>
       </div>
   	<?php endif ?>
-
     <!-- logged in user information -->
-    <?php  if (isset($_SESSION['username'])) : 
-    	//require_once('public_html/principal.html') 
-        header("Location: public_html/principal.html")?>
+    <?php if (isset($_SESSION['username'])) : 
+    	require_once('public_html/principal.html') 
+        //header("Location: public_html/principal.html")?>
     <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
     <?php endif ?>
 </div>
