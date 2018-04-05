@@ -1,15 +1,16 @@
 <?php 
+
   session_start(); 
   if (!isset($_SESSION['username'])) {
   	$_SESSION['msg'] = "You must log in first";
-      //header("Location: login.php");
-      require_once('login.php');
+      header("Location: login.php");
+      //require_once('login.php');
   }
   if (isset($_GET['logout'])) {
   	session_destroy();
   	unset($_SESSION['username']);
-  	require_once('login.php');
-    //header("Location: login.php");  
+  	//require_once('login.php');
+    header("Location: login.php");  
   }
 ?>
 
@@ -47,8 +48,8 @@
   	<?php endif ?>
     <!-- logged in user information -->
     <?php if (isset($_SESSION['username'])) : 
-    	require_once('public_html/principal.html') 
-        //header("Location: public_html/principal.html")?>
+    	//require_once('public_html/principal.html') 
+        header("Location: public_html/principal.html")?>
     <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
     <?php endif ?>
 </div>

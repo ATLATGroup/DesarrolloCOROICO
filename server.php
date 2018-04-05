@@ -11,18 +11,18 @@ $errors = array();
 global $db;
 // connect to the database
 //$db = mysqli_connect('localhost', 'root', '', 'atlatl');
-    $dsn = getenv('MYSQL_DSN');
-    $user = getenv('MYSQL_USER');
-    $password = getenv('MYSQL_PASSWORD');
-    if(!isset($dsn, $user) || false ===$password){
-        throw new Exception('Set MYSQL_DSN, MYSQL_USER, and MYSQL_PASSWORD environment variables');
-    }
+    //$dsn = getenv('MYSQL_DSN');
+    //$user = getenv('MYSQL_USER');
+    //$password = getenv('MYSQL_PASSWORD');
+    //if(!isset($dsn, $user) || false ===$password){
+        //throw new Exception('Set MYSQL_DSN, MYSQL_USER, and MYSQL_PASSWORD environment variables');
+    //}
     
     try{
-        //$user = "root";
-        //$password = "";
-        $db = new PDO($dsn, $user, $password);
-        //$db = new PDO('mysql:host=localhost;dbname=atlatl', $user, $password);
+        $user = "root";
+        $password = "";
+        //$db = new PDO($dsn, $user, $password);
+        $db = new PDO('mysql:host=localhost;dbname=atlatl', $user, $password);
     }catch(PDOException $e){
         echo "Error";
     }

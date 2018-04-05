@@ -5,12 +5,27 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>- Coroico -</title>
 	<link rel="stylesheet" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-icons.min.css">
-    <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-icons.min.css">
-    <link rel="stylesheet" type="text/css" href="css/flaticon.css">
-  <link href="/public_html/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href="css/style.css" rel="stylesheet">
     <script src="js/menu.js" type="text/javascript"></script>
+    <!--<script src="js/navegacion.js" type="text/javascript"></script>-->
+    <script type="text/javascript"> 
+            function cargar(){
+            var url="universo4.html"
+            $.ajax({   
+                type: "POST",
+                url:url,
+                data:{},
+                success: function(datos){       
+                    $('#row').html(datos);
+                }
+            });
+        }
+        </script>
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
@@ -54,7 +69,7 @@
             <center>Universos</center>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link"><span class="flaticon-big-dipper"></span> 4 Requisitos de Gestión</a>
+            <a href="#" onclick="javascript:cargar()" class="nav-link"><span class="flaticon-big-dipper"></span> 4 Requisitos de Gestión</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link"><span class="flaticon-big-dipper"></span> 5 Requisitos Técnicos</a>
@@ -70,8 +85,8 @@
       <!-- Breadcrumb--> 
       <ol class="breadcrumb">
         <li class="breadcrumb-item">COROICO</li>
-        <li class="breadcrumb-item">Universo</li>
-        <li class="breadcrumb-item active"><a href="#">Galaxia</a></li>
+        <li class="breadcrumb-item active">Universo</li>
+        <li class="breadcrumb-item"><a href="#">Galaxia</a></li>
         <li class="breadcrumb-item "><a href="#">Sistema Solar</a></li>
         <li class="breadcrumb-item"><a href="luna.html">Planeta</a></li>
 
@@ -80,126 +95,8 @@
       <div class="container-fluid">
         <!--Punto 4.1-->
         <div class="animated fadeIn">
-          <div class="row">
-              <!--punto 4.1-->
-              <div class="cajas" id="cajaId">
-                  <div class="glyph"><div id="galaxia" class="glyph-icon flaticon-galaxy"></div></div>
-                  <div class="card-body pb-0" style="150px">
-                  <h4 class="mb-0"><label class="puntocuatro">4.1 Organización y responsabilidades de la dirección</label></h4>
-                </div>
-              </div>
+          <div id="row" class="row">
               
-              <!--Punto 4.2-->  
-              <div class="cajas">
-                  <div class="glyph"><div id="galaxia" class="glyph-icon flaticon-galaxy"></div></div>
-                  <div class="card-body pb-0" style="150px">
-                      <h4 class="mb-0"><label class="puntocuatro">4.2 Sistema de gestión de la calidad</label></h4>
-                </div>
-              </div>
-
-              <!--Punto 4.3-->
-              <div class="cajas">
-                  <div class="glyph"><div id="galaxia" class="glyph-icon flaticon-galaxy"></div></div>
-                  <div class="card-body pb-0" style="150px">
-                  <h4 class="mb-0"><label class="puntocuatro">4.3 Control de documentos</label></h4>
-                </div>
-              </div>
-              
-              <!--Punto 4.4-->
-              <div class="cajas">
-                  <div class="glyph"><div id="galaxia" class="glyph-icon flaticon-galaxy"></div></div>
-                  <div class="card-body pb-0" style="150px">
-                  <h4 class="mb-0"><label class="puntocuatro">4.4 Contratos de prestación de servicios</label></h4>
-                </div>
-              </div>
-              
-              <!--Punto 4.5-->
-              <div class="cajas">
-                  <div class="glyph"><div id="galaxia" class="glyph-icon flaticon-galaxy"></div></div>
-                  <div class="card-body pb-0" style="150px">
-                  <h4 class="mb-0"><label class="puntocuatro">4.5 Exámenes por laboratorios subcontratados</label></h4>
-                </div>
-              </div>
-              
-              <!--Punto 4.6-->
-              <div class="cajas">
-                  <div class="glyph"><div id="galaxia" class="glyph-icon flaticon-galaxy"></div></div>
-                  <div class="card-body pb-0" style="150px">
-                  <h4 class="mb-0"><label class="puntocuatro">4.6 Servicios y suministros externos</label></h4>
-                </div>
-              </div>
-              
-              <!--Punto 4.7-->
-              <div class="cajas">
-                  <div class="glyph"><div id="galaxia" class="glyph-icon flaticon-galaxy"></div></div>
-                  <div class="card-body pb-0" style="150px">
-                  <h4 class="mb-0"><label class="puntocuatro">4.7 Servicios de asesoría</label></h4>
-                </div>
-              </div>
-              
-              <!--Punto 4.8-->
-                <div class="cajas">
-                    <div class="glyph"><div id="galaxia" class="glyph-icon flaticon-galaxy"></div></div>
-                  <div class="card-body pb-0" style="150px">
-                  <h4 class="mb-0"><label class="puntocuatro">4.8 Resolución de quejas</label></h4>
-                </div>
-              </div>
-              
-              <!--Punto 4.9-->
-                <div class="cajas">
-                    <div class="glyph"><div id="galaxia" class="glyph-icon flaticon-galaxy"></div></div>
-                  <div class="card-body pb-0" style="150px">
-                  <h4 class="mb-0"><label class="puntocuatro">4.9 Identificación y control de no conformidades</label></h4>
-                </div>
-              </div>
-              
-              <!--Punto 4.10-->
-                <div class="cajas">
-                    <div class="glyph"><div id="galaxia" class="glyph-icon flaticon-galaxy"></div></div>
-                  <div class="card-body pb-0" style="150px">
-                  <h4 class="mb-0"><label class="puntocuatro">4.10 Acción Correctiva</label></h4>
-                </div>
-              </div>
-              
-              <!--Punto 4.11-->
-                <div class="cajas">
-                    <div class="glyph"><div id="galaxia" class="glyph-icon flaticon-galaxy"></div></div>
-                  <div class="card-body pb-0" style="150px">
-                  <h4 class="mb-0"><label class="puntocuatro">4.11 Acción Preventiva</label></h4>
-                </div>
-              </div>
-              
-              <!--Punto 4.12-->
-              <div class="cajas">
-                  <div class="glyph"><div id="galaxia" class="glyph-icon flaticon-galaxy"></div></div>
-                  <div class="card-body pb-0" style="150px">
-                  <h4 class="mb-0"><label class="puntocuatro">4.12 Mejora continua</label></h4>
-                </div>
-              </div>
-              
-              <!--Punto 4.13-->
-                <div class="cajas">
-                    <div class="glyph"><div id="galaxia" class="glyph-icon flaticon-galaxy"></div></div>
-                  <div class="card-body pb-0" style="150px">
-                  <h4 class="mb-0"><label class="puntocuatro">4.13 Control de registros</label></h4>
-                </div>
-              </div>
-              
-              <!--Punto 4.14-->
-                <div class="cajas">
-                    <div class="glyph"><div id="galaxia" class="glyph-icon flaticon-galaxy"></div></div>
-                  <div class="card-body pb-0" style="150px">
-                  <h4 class="mb-0"><label class="puntocuatro">4.14 Evaluación y auditorías</label></h4>
-                </div>
-              </div>
-              
-              <!--Punto 4.15-->
-                <div class="cajas">
-                    <div class="glyph"><div id="galaxia"class="glyph-icon flaticon-galaxy"></div></div>
-                  <div class="card-body pb-0" style="150px">
-                  <h4 class="mb-0"><label class="puntocuatro">4.15 Revisión por la dirección</label></h4>
-                </div>
-              </div>
           </div>
         </div>
 
